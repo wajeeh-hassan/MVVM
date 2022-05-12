@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova Medium.otf">
+            <string>ProximaNova-Medium</string>
+        </array>
+        <array key="ProximaNova Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="EmpCell" customModule="MVVM_New" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-jY-4Hg">
+                        <rect key="frame" x="8" y="8" width="461" height="58.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O93-f0-t73">
+                                <rect key="frame" x="8" y="8" width="445" height="42.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43d-2g-v6K">
+                                        <rect key="frame" x="0.0" y="0.0" width="45.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="17"/>
+                                        <color key="textColor" name="color_light_blackText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4he-Rn-9z9">
+                                        <rect key="frame" x="0.0" y="25" width="42" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                                        <color key="textColor" name="color_light_blackText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14973041370000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="O93-f0-t73" firstAttribute="top" secondItem="p4P-jY-4Hg" secondAttribute="top" constant="8" id="4ao-OE-H39"/>
+                            <constraint firstAttribute="trailing" secondItem="O93-f0-t73" secondAttribute="trailing" constant="8" id="RTw-9H-XqG"/>
+                            <constraint firstItem="O93-f0-t73" firstAttribute="leading" secondItem="p4P-jY-4Hg" secondAttribute="leading" constant="8" id="v4J-Xw-fVn"/>
+                            <constraint firstAttribute="bottom" secondItem="O93-f0-t73" secondAttribute="bottom" constant="8" id="xbn-mh-rCZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="borderLightGreyClor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="p4P-jY-4Hg" secondAttribute="trailing" constant="8" id="15k-sE-fpN"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p4P-jY-4Hg" secondAttribute="bottom" constant="8" id="C55-Wb-cPc"/>
+                    <constraint firstItem="p4P-jY-4Hg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JLD-bJ-18G"/>
+                    <constraint firstItem="p4P-jY-4Hg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="vtc-sp-MRq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLable" destination="43d-2g-v6K" id="ljj-lv-5oP"/>
+                <outlet property="salaryLable" destination="4he-Rn-9z9" id="2P1-0x-HGZ"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="126.22767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="borderLightGreyClor">
+            <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_light_blackText">
+            <color red="0.2630000114440918" green="0.2630000114440918" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
